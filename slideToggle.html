@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>slideToggle</title>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	</head>
+	<h2>Jquery Toggle Example to Display and Hide Content</h2>
+	<style>
+		div {
+			background-color: orange;
+			border: 3px dotted red;
+			color: green;
+			font-family: arial narrow;
+			display: none;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#mybutton").click(function () {
+				$(".mydiv").slideToggle();
+			});
+		});
+	</script>
+	<body>
+		<button id="mybutton">Click to Show/Hide Content</button>
+		<div class="mydiv">
+			<p>Hello World</p>
+			<p>Welcome to jquery</p>
+			<p>More dribble</p>
+			<p>Even more</p>
+		</div>
+	</body>
+</html>
